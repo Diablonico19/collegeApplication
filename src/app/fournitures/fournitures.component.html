@@ -1,0 +1,54 @@
+<script src="../../assets/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+<!-- COLSPAN=8   <td ng-if="categorieCree(fourniture.categorie) == false" COLSPAN=8>test</td><th COLSPAN=8>Anglais</th>-->
+<h2>Ma liste des fournitures</h2>
+<body>
+  <div>
+    <ul class="fournitures">
+      <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nom</th>
+          <th>6ème</th>
+          <th>5ème</th>
+          <th>4ème</th>
+          <th>3ème</th>
+          <th>Prix en €</th>
+          <th>Catégorie</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let fourniture of fournituresPage0">
+        <tr>
+          <td colspan="8"></td>
+        </tr>
+        <tr>
+          <td>{{fourniture.id}}</td>
+          <td>{{fourniture.classe6}}</td>
+          <td>{{fourniture.classe5}}</td>
+          <td>{{fourniture.classe4}}</td>
+          <td>{{fourniture.classe3}}</td>
+          <td>{{fourniture.prix}}</td>
+          <td>{{fourniture.nom}}</td>
+          <td>{{fourniture.categorie}}</td>
+        </tr>
+      </tbody>
+      <!-- <tbody *ngFor="let categorie of categories">
+          <tr>
+            <td colspan="8">categorie.name</td>
+          </tr>
+          <tr *ngFor="let fourniture of categorie.fournitures">
+            <td>{{fourniture.id}}</td>
+            <td>{{fourniture.classe6}}</td>
+            <td>{{fourniture.classe5}}</td>
+            <td>{{fourniture.classe4}}</td>
+            <td>{{fourniture.classe3}}</td>
+            <td>{{fourniture.prix}}</td>
+            <td>{{fourniture.nom}}</td>
+            <td>{{fourniture.categorie}}</td>
+          </tr>
+        </tbody> -->
+    </table>
+    </ul>
+  </div>
+</body>
